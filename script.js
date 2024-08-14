@@ -32,3 +32,26 @@ function addTask(taskText) {
     li.appendChild(deleteButton);
     taskList.appendChild(li);
 }
+
+
+
+
+// document.getElementById("orange").onclick=function(){
+//     document.body.style.backgroundColor=`orange`
+// }
+// document.getElementById("green").onclick=function(){
+//     document.body.style.backgroundColor=`green`
+// }
+//SAME WORK D/B CLOSUR ......& MAIN TOPIC FOR JAVA SCRIPT.....
+function clickHandler(color){
+    return function(){
+        document.body.style.backgroundColor=`${color}`
+    }
+}
+
+document.getElementById("orange").onclick =clickHandler("orange ")
+document.getElementById("green").onclick =clickHandler("green ")
+
+
+
+
